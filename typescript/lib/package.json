@@ -1,6 +1,6 @@
 {
   "name": "pareto-stream",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "author": "Corno",
   "license": "Apache-2.0",
   "description": "A library providing stream resources for the Pareto programming Language",

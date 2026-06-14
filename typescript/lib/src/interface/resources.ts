@@ -1,4 +1,5 @@
-import * as _pi from 'pareto-core/dist/interface'
+import * as _pci from 'pareto-core/dist/command_interface'
+import * as _pqi from 'pareto-core/dist/query_interface'
 
 
 import * as d_stream_log from "./generated/liana/schemas/log/data"
@@ -9,15 +10,15 @@ import * as d_stream_get_instream_data from "./generated/liana/schemas/get_indat
 
 export namespace commands {
 
-    export type log = _pi.Command<null, d_stream_log.Parameters>
-    export type log_error = _pi.Command<null, d_stream_log_error.Parameters>
-    export type write_to_stderr = _pi.Command<null, d_stream_write_to_stderr.Parameters>
-    export type write_to_stdout = _pi.Command<null, d_stream_write_to_stdout.Parameters>
+    export type log = _pci.Command<null, d_stream_log.Parameters>
+    export type log_error = _pci.Command<null, d_stream_log_error.Parameters>
+    export type write_to_stderr = _pci.Command<null, d_stream_write_to_stderr.Parameters>
+    export type write_to_stdout = _pci.Command<null, d_stream_write_to_stdout.Parameters>
 
 }
 
 export namespace queries {
 
-    export type get_instream_data = _pi.Query<d_stream_get_instream_data.Result, null, d_stream_get_instream_data.Parameters>
+    export type get_instream_data = _pqi.Query<d_stream_get_instream_data.Result, null, d_stream_get_instream_data.Parameters>
 
 }

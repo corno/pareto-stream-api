@@ -1,4 +1,4 @@
-import * as p_ci from 'pareto-core/dist/command/interface'
+import * as p_ci from 'pareto-core/dist/interface/command'
 
 
 import * as d_stream_log from "./generated/liana/schemas/log/data"

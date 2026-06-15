@@ -1,4 +1,4 @@
-import * as p_qi from 'pareto-core/dist/query/interface'
+import * as p_qi from 'pareto-core/dist/interface/query'
 
 import * as d_stream_get_instream_data from "./generated/liana/schemas/get_indata/data"
 

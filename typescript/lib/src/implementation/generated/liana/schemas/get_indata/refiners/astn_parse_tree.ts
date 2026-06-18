@@ -1,11 +1,11 @@
 
-import * as _p from 'pareto-core/dist/assign'
+import * as p_ from 'pareto-core/dist/implementation/refiner'
 
-import _p_change_context from 'pareto-core/dist/implementation/specials/change_context'
+import p_change_context from 'pareto-core/dist/implementation/specials/change_context'
 
-import _p_list_from_text from 'pareto-core/dist/implementation/specials/list_from_text'
+import p_list_from_text from 'pareto-core/dist/implementation/specials/list_from_text'
 
-import _p_variables from 'pareto-core/dist/implementation/specials/variables'
+import p_variables from 'pareto-core/dist/implementation/specials/variables'
 
 import * as t_signatures from "../../../../../../interface/generated/liana/schemas/get_indata/signatures/refiners/astn_parse_tree"
 

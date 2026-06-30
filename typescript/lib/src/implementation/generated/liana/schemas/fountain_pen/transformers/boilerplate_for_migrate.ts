@@ -17,7 +17,7 @@ export const Paragraph: t_signatures.Paragraph = ($) => p_decide_state(
     ($): t_out.Paragraph => {
         switch ($[0]) {
             case 'composed':
-                return p_.ss(
+                return p_.option(
                     $,
                     ($) => ['composed', p_.from.list($,
                     ).map(
@@ -27,7 +27,7 @@ export const Paragraph: t_signatures.Paragraph = ($) => p_decide_state(
                     )],
                 )
             case 'sentences':
-                return p_.ss(
+                return p_.option(
                     $,
                     ($) => ['sentences', p_.from.list($,
                     ).map(
@@ -37,7 +37,7 @@ export const Paragraph: t_signatures.Paragraph = ($) => p_decide_state(
                     )],
                 )
             case 'optional':
-                return p_.ss(
+                return p_.option(
                     $,
                     ($) => ['optional', p_.from.optional($,
                     ).map(
@@ -47,12 +47,12 @@ export const Paragraph: t_signatures.Paragraph = ($) => p_decide_state(
                     )],
                 )
             case 'nothing':
-                return p_.ss(
+                return p_.option(
                     $,
                     ($) => ['nothing', null],
                 )
             case 'rich list':
-                return p_.ss(
+                return p_.option(
                     $,
                     ($) => ['rich list', {
                         'items': p_change_context(
@@ -131,19 +131,19 @@ export const Phrase: t_signatures.Phrase = ($) => p_decide_state(
     ($): t_out.Phrase => {
         switch ($[0]) {
             case 'value':
-                return p_.ss(
+                return p_.option(
                     $,
                     ($) => ['value', p_decide_state(
                         $,
                         ($): t_out.Phrase.value => {
                             switch ($[0]) {
                                 case 'text':
-                                    return p_.ss(
+                                    return p_.option(
                                         $,
                                         ($) => ['text', $],
                                     )
                                 case 'list of characters':
-                                    return p_.ss(
+                                    return p_.option(
                                         $,
                                         ($) => ['list of characters', v_list_of_characters.List_of_Characters(
                                             $,
@@ -158,14 +158,14 @@ export const Phrase: t_signatures.Phrase = ($) => p_decide_state(
                     )],
                 )
             case 'indent':
-                return p_.ss(
+                return p_.option(
                     $,
                     ($) => ['indent', Paragraph(
                         $,
                     )],
                 )
             case 'composed':
-                return p_.ss(
+                return p_.option(
                     $,
                     ($) => ['composed', p_.from.list($,
                     ).map(
@@ -175,7 +175,7 @@ export const Phrase: t_signatures.Phrase = ($) => p_decide_state(
                     )],
                 )
             case 'optional':
-                return p_.ss(
+                return p_.option(
                     $,
                     ($) => ['optional', p_.from.optional($,
                     ).map(
@@ -185,12 +185,12 @@ export const Phrase: t_signatures.Phrase = ($) => p_decide_state(
                     )],
                 )
             case 'nothing':
-                return p_.ss(
+                return p_.option(
                     $,
                     ($) => ['nothing', null],
                 )
             case 'rich list':
-                return p_.ss(
+                return p_.option(
                     $,
                     ($) => ['rich list', {
                         'items': p_change_context(

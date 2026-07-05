@@ -1,6 +1,6 @@
-import * as p_ from 'pareto-core/dist/interface/query'
+import * as p_ from 'pareto-core/interface/query'
 
-import * as d_stream_get_instream_data from "./generated/liana/schemas/get_indata/data"
+import * as d_stream_get_instream_data from "./generated/liana/schemas/get_indata/data.js"
 
 export namespace queries {
 

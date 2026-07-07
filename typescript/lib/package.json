@@ -1,9 +1,9 @@
 {
   "name": "pareto-stream-api",
-  "version": "0.1.18",
+  "version": "0.1.17",
   "author": "Corno",
   "license": "Apache-2.0",
-  "description": "A library providing stream resources for the Pareto programming Language",
+  "description": "A library providing an API for stream related queries and commands for Pareto packages",
   "type": "module",
   "exports": {
     "./*": {

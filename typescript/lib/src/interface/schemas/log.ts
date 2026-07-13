@@ -1,7 +1,7 @@
 
 import * as p_i from 'pareto-core/interface/__internal/Abort'
 
-import * as i_imports_fountain_pen from "./fountain_pen.js"
+import * as i_imports_fountain_pen from "pareto-fountain-pen/interface/schemas/prose"
 
 export namespace Parameters_ {
     

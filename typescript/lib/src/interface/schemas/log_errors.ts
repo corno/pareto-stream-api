@@ -8,7 +8,9 @@ export namespace Parameters_ {
 }
 
 export type Parameters_ = {
-    readonly 'messages': Parameters_.messages
+    readonly 'paragraph': Parameters_.messages
+    readonly 'newline': string
+    readonly 'indentation': string
 }
 
 export type Error_ = null

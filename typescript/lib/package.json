@@ -1,6 +1,6 @@
 {
   "name": "pareto-stream-api",
-  "version": "0.1.32",
+  "version": "0.1.33",
   "author": "Corno",
   "license": "Apache-2.0",
   "description": "A library providing an API for stream related queries and commands for Pareto packages",

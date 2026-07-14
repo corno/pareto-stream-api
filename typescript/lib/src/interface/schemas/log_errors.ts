@@ -1,5 +1,4 @@
 
-
 import * as i_imports_fountain_pen from "pareto-fountain-pen/interface/schemas/prose"
 
 export namespace Parameters_ {
@@ -9,7 +8,7 @@ export namespace Parameters_ {
 }
 
 export type Parameters_ = {
-    readonly 'data': Parameters_.messages
+    readonly 'messages': Parameters_.messages
 }
 
 export type Error_ = null

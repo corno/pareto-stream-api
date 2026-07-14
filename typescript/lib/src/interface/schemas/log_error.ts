@@ -5,7 +5,7 @@ import * as i_imports_fountain_pen from "pareto-fountain-pen/interface/schemas/p
 
 export namespace Parameters_ {
     
-    export type message = i_imports_fountain_pen.Paragraph
+    export type message = i_imports_fountain_pen.Phrase
     
 }
 

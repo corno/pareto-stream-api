@@ -1,16 +1,14 @@
 
-import * as i_imports_fountain_pen from "pareto-fountain-pen/interface/schemas/prose"
+import * as p_ from 'pareto-core/interface/schema'
 
 export namespace Parameters_ {
     
-    export type messages = i_imports_fountain_pen.Paragraph
+    export type messages = p_.List<string>
     
 }
 
 export type Parameters_ = {
-    readonly 'paragraph': Parameters_.messages
-    readonly 'newline': string
-    readonly 'indentation': string
+    readonly 'messages': Parameters_.messages
 }
 
 export type Error_ = null

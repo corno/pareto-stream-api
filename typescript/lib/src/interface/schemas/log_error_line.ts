@@ -2,7 +2,7 @@
 
 
 export type Parameters_ = {
-    readonly 'message': string
+    readonly 'line': string
 }
 
 export type Error_ = null

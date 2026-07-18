@@ -3,12 +3,12 @@ import * as p_ from 'pareto-core/interface/schema'
 
 export namespace Parameters_ {
     
-    export type messages = p_.List<string>
+    export type lines = p_.List<string>
     
 }
 
 export type Parameters_ = {
-    readonly 'messages': Parameters_.messages
+    readonly 'lines': Parameters_.lines
 }
 
 export type Error_ = null

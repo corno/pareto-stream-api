@@ -1,6 +1,6 @@
 import * as p_ from 'pareto-core/interface/query_interface'
 
-import type * as s_stream_get_instream_data from "./schemas/get_indata.js"
+import type * as s_stream_get_instream_data from "../schemas/get_indata/schema.js"
 
 
 export type get_instream_data = p_.Query_Interface<

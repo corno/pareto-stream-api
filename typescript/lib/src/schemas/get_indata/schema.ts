@@ -1,4 +1,4 @@
-import * as s_list_of_characters from "./list_of_characters.js"
+import * as s_list_of_characters from "../list_of_characters/schema.js"
 
 export type Parameters_ = null
 

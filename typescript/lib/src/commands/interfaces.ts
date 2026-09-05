@@ -1,4 +1,4 @@
-import * as p_ from 'pareto-core/interface/command_interface'
+import * as p_ from 'pareto-core/command_interface'
 
 import type * as s_stream_log_lines from "../schemas/log_lines/schema.js"
 import type * as s_stream_log_error_lines from "../schemas/log_error_lines/schema.js"
